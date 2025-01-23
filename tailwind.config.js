@@ -1,10 +1,17 @@
 export default {
-    content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-        extend: {},
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/reactflow/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#3b82f6',
+        secondary: '#64748b',
+        danger: '#ef4444',
+      },
     },
-    plugins: [],
+  },
+  plugins: [],
 };
